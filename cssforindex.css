@@ -1,0 +1,249 @@
+body{
+    margin:0;
+    font-family: Arial;
+    color: black;
+    background: #73C8A9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #373B44, #73C8A9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #373B44, #73C8A9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+#navbar:hover,#bottom:hover,#logo:hover,#links:hover{
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow:2px 2px 8px rgba(0,0,0,0.6);
+}
+#navbar{
+    width:100%;
+    height:150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #232526;  
+    background: -webkit-linear-gradient(to right, #414345, #232526);  
+    background: linear-gradient(to right, #414345, #232526); 
+    color: gainsboro;
+}
+#logo{
+    width:350px;
+    height:60px;
+    background: #808080;
+    background: -webkit-linear-gradient(to right, #3fada8, #808080); 
+    background: linear-gradient(to right, #3fada8, #808080);
+    padding:5px;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+}
+#links-container{
+    width:250px;
+    height:60px;
+    background: #808080;
+    background: -webkit-linear-gradient(to right, #3fada8, #808080); 
+    background: linear-gradient(to right, #3fada8, #808080);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-right: 5px;
+}
+#todo-items{
+    margin-top:10px;
+    width:80%;
+    margin-right:10%;
+    margin-left: 10%;
+}
+#single{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #f12711;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f5af19, #f12711);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f5af19, #f12711); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-bottom: 5px;
+    transition: 0.3s all;
+    padding:5px;
+    border-radius: 8px;
+}
+#single:hover{
+    background: #FF416C;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FF4B2B, #FF416C); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow:2px 2px 8px rgba(0,0,0,0.6);
+}
+#links{
+    margin-top: 5px;
+    width:250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#task-title{
+    font-size:20px;
+    font-weight: 600;
+}
+#task-deadline{
+    
+    background: #136a8a;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #267871, #136a8a);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #267871, #136a8a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding:10px;
+    border-radius:8px;
+    width:fixed;
+}
+a{
+    text-decoration: none;
+    color: gainsboro;
+}
+#container{
+    width:60%;
+    margin:110px 20%;   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.faram{
+    border-radius: 8px;
+    width:80%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#add-task{
+    width:200px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+#bottom{
+    width: 100%;
+    height:150px;
+    font-size:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #232526;  
+    background: -webkit-linear-gradient(to right, #414345, #232526);  
+    background: linear-gradient(to right, #414345, #232526); 
+    color: gainsboro;
+}
+#add-tasks-from-here{
+    margin-top: 40px;
+    border:1px solid black;
+    border-radius: 10px;
+}
+@media only screen and (max-width:1024px){
+    #navbar{
+        height:200px;
+    }
+    #bottom{
+        height:200px;
+    }
+    #container{
+        margin:300px 20%;
+    }
+    .faram{
+        border-radius: 8px;
+        width:300px;
+        height:60px;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+}
+@media only screen and (max-width:768px){
+    #container{
+        margin:130px 20%;
+    }
+    #links{
+        width:220px;
+    }
+}
+@media only screen and (max-width:375px){
+    #navbar{
+        flex-direction: column;
+        height:170px;
+    }
+    #bottom{
+        height:170px;
+    }
+    #logo{
+        margin-top: 10px;
+        width:300px;
+    }
+    #links-container{
+        margin-bottom: 10px;
+    }
+    .faram{
+        border-radius: 8px;
+        width:100px;
+        height:30px;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    #container{
+        margin:110px 20%;
+    }
+    #single{
+        flex-direction: column;
+        align-items:left;
+    }
+    #links{
+        width:80%;
+        font-size:10px;
+    }
+}
+@media only screen and (max-width:414px){
+    #navbar{
+        flex-direction: column;
+        height:170px;
+    }
+    #bottom{
+        height:170px;
+    }
+    #logo{
+        margin-top: 10px;
+        width:300px;
+    }
+    #links-container{
+        margin-bottom: 10px;
+    }
+    .faram{
+        border-radius: 8px;
+        width:100px;
+        height:30px;
+        padding: 10px;
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+    #container{
+        margin:75px 20%;
+    }
+    #single{
+        flex-direction: column;
+        align-items:left;
+    }
+    #links{
+        width:80%;
+        font-size:10px;
+    
+    }
+}
+@media only screen and (max-width:320px){
+    #navbar,#bottom{
+        height:140px;
+    }
+    #logo,#links-container{
+        height:40px;
+    }
+    #container{
+        margin:20px 20%;
+    }
+}
+@media only screen and (max-width:411px){
+   #container{
+       margin:120px 20%;
+   }
+}
